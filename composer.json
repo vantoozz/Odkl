@@ -19,5 +19,11 @@
             "Vantoozz\\Odkl": "src/"
         }
     },
+	"scripts": {
+		"post-update-cmd": [
+			"php artisan asset:publish vantoozz/odkl",
+			"php artisan config:publish vantoozz/odkl"
+		]
+	},
     "minimum-stability": "dev"
 }
