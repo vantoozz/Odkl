@@ -13,7 +13,7 @@ Route::get('odkl/auth', function(){
 
     $user=null;
     if($code=Input::get('code', null)){
-        $odkl=new ODKL;
+        $odkl=new Odkl;
         try{
             $data=$odkl->get_token($code, URL::to('odkl/auth'));
             Event::fire('odkl.login', array($data));
