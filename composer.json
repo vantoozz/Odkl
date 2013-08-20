@@ -20,9 +20,12 @@
         }
     },
 	"scripts": {
-		"post-update-cmd": [
+		"post-install-cmd": [
 			"php artisan asset:publish vantoozz/odkl",
 			"php artisan config:publish vantoozz/odkl"
+		],
+		"post-update-cmd": [
+			"php artisan asset:publish vantoozz/odkl"
 		]
 	},
     "minimum-stability": "dev"

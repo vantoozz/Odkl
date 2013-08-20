@@ -44,7 +44,7 @@ ODKL={
 
         window.open('http://www.odnoklassniki.ru/oauth/authorize?client_id='+ODKL.client_id+'&scope='+scope+'&response_type=code&redirect_uri='+redirect_uri,
                     'ODKL_LOGIN',
-            'width=800,height=400,resizable=1');
+            'width=800,height=400,resizable=1').focus();
     }
 }
 
